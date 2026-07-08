@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de Intención de Misa</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background: #f4f7f6; padding: 20px; }
+        .card { max-width: 600px; background: white; margin: auto; padding: 30px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        h2 { color: #004a99; text-align: center; }
+        label { display: block; margin: 15px 0 5px; font-weight: bold; }
+        select, input, textarea { width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px; box-sizing: border-box; }
+        .info-pago { background: #fff3cd; padding: 15px; border-left: 5px solid #ffc107; margin: 20px 0; }
+        .btn { width: 100%; background: #004a99; color: white; padding: 15px; border: none; border-radius: 5px; cursor: pointer; font-size: 1rem; margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h2>Solicitud de Intención</h2>
+    <form action="mailto:tu-correo@ejemplo.com" method="post" enctype="text/plain">
+        
+        <label>Tipo de intención:</label>
+        <select name="tipo">
+            <option value="Difunto">Difunto</option>
+            <option value="Accion de Gracias">Acción de Gracias</option>
+            <option value="Salud">Salud</option>
+        </select>
+
+        <label>Nombre y Apellido:</label>
+        <input type="text" name="nombre" placeholder="Nombre completo" required>
+
+        <div class="info-pago">
+            <strong>Donación mínima: 100 Bolívares</strong><br>
+            Pago Móvil: 0102 - 29514416 - 0412 6148476
+        </div>
+
+        <label>Referencia de Pago Móvil:</label>
+        <input type="text" name="referencia" placeholder="Escribe aquí el número de referencia" required>
+
+        <button type="submit" class="btn">Enviar Solicitud</button>
+    </form>
+</div>
+
+</body>
+</html>
