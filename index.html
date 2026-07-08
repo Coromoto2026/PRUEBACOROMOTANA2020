@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parroquia Nuestra Señora de Coromoto</title>
+    <style>
+        /* Configuración base para evitar errores de tildes y caracteres */
+        html { scroll-behavior: smooth; }
+        
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            margin: 0; 
+            background: #f4f7f6; 
+            color: #333; 
+            line-height: 1.6; 
+        }
+        
+        /* Encabezado */
+        header { 
+            background: #004a99; 
+            color: white; 
+            padding: 3rem 1rem; 
+            text-align: center; 
+            border-bottom: 5px solid #d4af37; 
+        }
+        
+        /* Menú de navegación fijo */
+        nav { 
+            background: #fff; 
+            position: sticky; 
+            top: 0; 
+            padding: 15px; 
+            text-align: center; 
+            z-index: 1000; 
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+        }
+        nav a { 
+            color: #004a99; 
+            margin: 0 15px; 
+            text-decoration: none; 
+            font-weight: bold; 
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+        nav a:hover { color: #d4af37; }
+        
+        /* Contenedor principal */
+        .container { max-width: 900px; margin: auto; padding: 20px; }
+        .card { 
+            background: white; 
+            padding: 30px; 
+            margin-bottom: 20px; 
+            border-radius: 8px; 
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05); 
+        }
+        
+        h2 { color: #004a99; border-left: 5px solid #d4af37; padding-left: 15px; }
+        
+        /* Estilo para imágenes */
+        .foto-web { width: 100%; height: auto; border-radius: 8px; margin-bottom: 15px; }
+        
+        /* Botones de trámites */
+        .tramites-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; }
+        .btn-tramite { 
+            background: #f8f9fa; 
+            padding: 15px; 
+            text-align: center; 
+            border-radius: 5px; 
+            text-decoration: none; 
+            color: #333; 
+            font-weight: bold; 
+            border: 1px solid #ddd;
+            transition: 0.3s;
+        }
+        .btn-tramite:hover { background: #004a99; color: white; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Parroquia Nuestra Señora de Coromoto</h1>
+    <p>Comunidad de fe y servicio en Quebrada de Cua</p>
+</header>
+
+<nav>
+    <a href="#historia">Historia</a>
+    <a href="#quienes">Nosotros</a>
+    <a href="#tramites">Trámites</a>
+    <a href="#contacto">Ubicación</a>
+</nav>
+
+<div class="container">
+    <section id="historia" class="card">
+        <h2>Historia</h2>
+        <img src="img/iglesia.jpg" class="foto-web" alt="Nuestra Parroquia">
+        <p>Escribe aquí la historia de nuestra parroquia, su fundación y su importancia para la comunidad de Quebrada de Cua.</p>
+    </section>
+
+    <section id="quienes" class="card">
+        <h2>Quiénes somos</h2>
+        <p>Somos una comunidad eclesial comprometida con la evangelización y la ayuda al prójimo. Trabajamos diariamente por fortalecer los valores cristianos.</p>
+    </section>
+
+    <section id="tramites" class="card">
+        <h2>Trámites y Servicios</h2>
+        <div class="tramites-grid">
+            <a href="#" class="btn-tramite">Intenciones de Misa</a>
+            <a href="#" class="btn-tramite">Bautismos</a>
+            <a href="#" class="btn-tramite">Fe de Bautismo</a>
+            <a href="#" class="btn-tramite">Matrimonios</a>
+            <a href="#" class="btn-tramite">Constancias</a>
+            <a href="#" class="btn-tramite">Donaciones</a>
+        </div>
+    </section>
+
+    <section id="contacto" class="card">
+        <h2>Ubicación</h2>
+        <p>Encuéntranos en el centro de Quebrada de Cua. Estamos abiertos para recibirte y acompañarte en tu vida espiritual.</p>
+    </section>
+</div>
+
+</body>
+</html>
